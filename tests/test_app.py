@@ -1,7 +1,8 @@
 import unittest
-from app import app
+from .. import app
 
 class BasicTests(unittest.TestCase):
+    app1= app.app
     tester=app.test_client(self)
     response=tester.get("/",content_type='html/text')
     self.assertEqual(response.status_code,200)
