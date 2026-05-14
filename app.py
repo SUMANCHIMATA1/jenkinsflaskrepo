@@ -3,8 +3,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hllo, Jenkins CI/CD from Flask App on Windows!"
-
+    return "Hello, Jenkins CI/CD from Flask App on Windows!"
 
 if __name__=="__main__":
     app.run(host="0.0.0.0",port=5000)
